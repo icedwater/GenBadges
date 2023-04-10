@@ -1,57 +1,52 @@
 # Event Attendees Badge Generator 
 
-$title$
-
-Generates PDF suitable for printing on stickers sheets
+Generates PDF suitable for printing multiple attendees' badges onto sticker sheets
 
 ## Install
 
-Create your virtual env so you don't bloat your dir
+1. Create your virtual env so you don't bloat your dir
 
-    python3 -m venv env
+        python3 -m venv env
 
-Activate it before doing anything
+2. Activate it before doing anything
 
-    source env/bin/activate
+        source env/bin/activate
 
-Install dependencies
+3. Install dependencies
 
-    pip install -r requirements.txt
+        pip install -r requirements.txt
 
 ## Usage
 
-Generate badges for the full attendees list
+- Generate badges for the full attendees list
 
-    python genbadge.py infile.csv outfile.pdf
+        python genbadge.py infile.csv outfile.pdf
 
-Other options available with the usual help
+- Print the 5th and 6th entries from the CSV file starting from the 3rd sticker position
 
-    python genbadge.py --help
+        python genbadge.py infile.csv outfile.pdf --start=3 --csvfirst=5 --csvlast=6
 
-    usage: genbadges.py [-h] [--layout LAYOUT] [--layout-list] [--start START] [--csvfirst CSVFIRST] [--csvlast CSVLAST] [input.csv] [output.pdf]
+- Other options available with the usual help
 
-    positional arguments:
-      input.csv
-      output.pdf
+        python genbadge.py --help
 
-    options:
-      -h, --help           show this help message and exit
-      --layout LAYOUT
-      --layout-list        display supported layouts
-      --start START        start number of layout sticker
-      --csvfirst CSVFIRST  csv entries first index to process
-      --csvlast CSVLAST    csv entries last index to process
+        usage: genbadges.py [-h] [--layout LAYOUT] [--layout-list] [--start START] [--csvfirst CSVFIRST] [--csvlast CSVLAST] [input.csv] [output.pdf]
 
+        positional arguments:
+          input.csv
+          output.pdf
 
-Prints the 5th and 6th entries from the CSV file starting on the 3rd sticker position
+        options:
+          -h, --help           show this help message and exit
+          --layout LAYOUT
+          --layout-list        display supported layouts
+          --start START        start number of layout sticker
+          --csvfirst CSVFIRST  csv entries first index to process
+          --csvlast CSVLAST    csv entries last index to process
 
-    python genbadge.py infile.csv outfile.pdf --start=3 --csvfirst=5 --csvlast=6
-
-Note the stickers are numbered from bottom to top, from left to right. *Read it again*
+**Note:** the stickers are numbered from bottom to top, from left to right. *Read it again*
 
 ## Limitations
 
  - If you're not happy, then deal with it or learn to code
-
-
 

@@ -3,13 +3,15 @@
  *
  * Licensed under the DontBugMe License, Version 1.0;
  * you may not use this file except in compliance with the License.
- * The Software is provided "as is", without warranty of any kind, express
- * or implied, including but not limited to the warranties of merchantability,
- * fitness for a particular purpose and noninfringement
+ *
+ * The Software is provided "as is", without warranty of any kind, express or
+ * implied, including but not limited to the warranties of merchantability,
+ * fitness for a particular purpose and noninfringement.
+ *
  * If you don't agree with those terms and complain to author about functionalities,
- * you are then required to share ten percent of your salary with me on the month of
- * your complain and go dance naked on the main street of your city with a large
- * cardboard stating you do not read software licenses before usage.
+ * you are then required to share ten percent of your salary with the author on the
+ * month of your complaint and go dance naked on the main street of your city with a
+ * large cardboard stating you do not read software licenses before usage.
  *
 """
 
